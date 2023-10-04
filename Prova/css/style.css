@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+}
+
+:root {
+  --primary: #00b98e;
+  --secondary: #effdf5;
+  --light: #effdf5;
+  --dark: #0e2e50;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 60px;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: var(--primary);
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+header nav ul li a:hover {
+  color: var(--primary);
+}
+
+main {
+  background-color: var(--light);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.col1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 0px 60px;
+}
+
+.col1 h2 {
+  font-size: 60px;
+  color: var(--dark);
+}
+
+.col1 h2 span {
+  color: var(--primary);
+}
+
+.col2 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-1 {
+  width: 200px;
+  height: 70px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--primary);
+}
+
+button:hover {
+  background-color: var(--dark);
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: var(--light);
+  font-size: 18px;
+}
+
+#section-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 60px;
+  width: 100%;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+.container-text h2 {
+  color: var(--dark);
+  font-size: 40px;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.card {
+  width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+}
+
+.card p {
+  color: var(--primary);
+
+}
+
+#section-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding: 40px 60px;
+}
+
+.card-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  box-shadow: -4px 4px 22px -10px rgba(0, 0, 0, 0.75);
+  width: 400px;
+}
+
+.card-two figure img {
+  width: 100%;
+}
+
+.card-text {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.card-two span {
+  font-size: 20px;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.card-two h3 {
+  color: var(--dark);
+  font-size: 25px;
+}
+
+.button-2 {
+  width: 300px;
+  height: 70px;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 10px;
+}
+
+#section-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 60px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.column-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 600px;
+  height: 50px;
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  padding: 0px 15px;
+}
+
+.column-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subject-1 input {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  min-height: 150px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px 15px;
+}
+
+.button-form input {
+  width: 100%;
+  height: 50px;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 10px;
+  color: var(--light);
+  font-size: 15px;
+}
+
+.button-form input:hover {
+  background-color: var(--dark);
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--dark);
+  height: 400px;
+  padding: 100px 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--light);
+  width: 50%;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-img-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer-img {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer-text a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.footer-text a:hover {
+  color: var(--primary);
+}
+
+.footer-seta {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+}
+
+/*Fonte: Heebo*/
